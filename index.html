@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="일상의 루틴을 꾸준히 기록하고 이어가는 앱" />
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121412" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Routiner" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Routiner</title>
+    <script>
+      // 저장된 테마를 첫 렌더 전에 적용해 깜빡임을 막는다 (실제 설정은 IndexedDB)
+      try {
+        var t = localStorage.getItem('routiner-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/routiner-app/assets/index-B97Qz9HF.js"></script>
+    <link rel="stylesheet" crossorigin href="/routiner-app/assets/index-BFBK4ikB.css">
+  <link rel="manifest" href="/routiner-app/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
